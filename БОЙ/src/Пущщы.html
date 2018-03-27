@@ -103,7 +103,7 @@ var monster =
 //Размер каждого кадра и число столбцов в наборе фреймов
 IMAGE: "ship.png",
 SIZE: 128,
-COLUMNS: 3,
+COLUMNS: 1,
 //Номер последнего кадра анимации и номер текущего кадра
 numberOfFrames: 5,
 currentFrame: 0,
@@ -204,8 +204,8 @@ var image = new Image();
 image.addEventListener("load", loadHandler, false);
 image.src = "../images/" + monster.IMAGE;
 //Число строк, столбцов, размер клеток и области между ними
-var ROWS = 3;
-var COLUMNS = 4;
+var ROWS = 1;
+var COLUMNS = 1;
 var SIZE = monster.SIZE;
 var SPACE = 25;
 //Массивы для монстров, их холстов и поверхностей рисования
