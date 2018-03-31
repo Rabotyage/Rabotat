@@ -9,7 +9,6 @@
 		html{
 	background-image: url(../images/bgrnd.jpg);
 	background-size: 1850px;
-
 }
 .center {
     width:  400px;
@@ -28,7 +27,6 @@
  	position: absolute;
  	top:900px;
  }
-
 .player{
 	position:absolute;
 width: 30px;
@@ -59,21 +57,9 @@ bottom: 5px;
 <p id="output"></p>
 
 	<script>
-
-
 	//Сюда впихнём начальную картинку старт тип
-
-
-
-
-
 	//Тут закончится это дерьмо
-
-
 //Объект кораблик в стороне
-
-
-
 //Объект gameTimer
 var gameTimer =
 {
@@ -182,7 +168,7 @@ this.currentFrame--;
 break;
 case this.HIT:
 //Текущим становится 7-й кадр с изображением взрыва
-this.currentFrame = 6;
+this.currentFrame = 5;
 //Увеличение resetCounter на 1
 this.resetCounter++;
 //Повтор анимации, если resetCounter = timeToReset
@@ -305,8 +291,7 @@ if(monsterCanvases[i] === theCanvasThatWasClicked)
 var monster = monsterObjects[i]
 if(monster.state === monster.JUMPING)
 {
-monster.state = monster.HIT;
-monstersHit++;
+monster.state = monster.HIT; monstersHit++;
 }
 }
 }
@@ -327,11 +312,10 @@ monster.sourceX, monster.sourceY, SIZE, SIZE,
 0, 0, SIZE, SIZE);
 }
 //Отображение игровой информации
-
-output.innerHTML = "Корэблей с пупуасами уничтожено: " + monstersHit
-+ " Время: " + gameTimer.time;
+output.innerHTML = "Корэблей с пупуасами уничтожено: " + monstersHit + " Время: " + gameTimer.time;
 }
 </script>
 </head>
 
 </html>
+
