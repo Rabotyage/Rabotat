@@ -89,7 +89,7 @@ var monster =
 //Размер каждого кадра и число столбцов в наборе фреймов
 IMAGE: "ship2.png",
 SIZE: 128,
-COLUMNS: 6,
+COLUMNS: 5,
 //Номер последнего кадра анимации и номер текущего кадра
 numberOfFrames: 5,
 currentFrame: 0,
@@ -168,7 +168,7 @@ this.currentFrame--;
 break;
 case this.HIT:
 //Текущим становится 7-й кадр с изображением взрыва
-this.currentFrame = +6;
+this.currentFrame = 6;
 //Увеличение resetCounter на 1
 this.resetCounter++;
 //Повтор анимации, если resetCounter = timeToReset
