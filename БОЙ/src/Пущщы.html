@@ -168,7 +168,7 @@ this.currentFrame--;
 break;
 case this.HIT:
 //Текущим становится 7-й кадр с изображением взрыва
-this.currentFrame = 5;
+this.currentFrame = 6;
 //Увеличение resetCounter на 1
 this.resetCounter++;
 //Повтор анимации, если resetCounter = timeToReset
@@ -304,11 +304,10 @@ for(var i = 0; i < monsterObjects.length; i++)
 var monster = monsterObjects[i];
 //и на его поверхность рисования
 var drawingSurface = monsterDrawingSurfaces[i];
-//Очистка холста текущего монстра
+//Очистка холста текущего монстра 
 drawingSurface.clearRect(0, 0, SIZE, SIZE);
 //Отображение текущего кадра текущего монстра
-drawingSurface.drawImage(image,
-monster.sourceX, monster.sourceY, SIZE, SIZE,
+drawingSurface.drawImage(image, monster.sourceX, monster.sourceY, SIZE, SIZE,
 0, 0, SIZE, SIZE);
 }
 //Отображение игровой информации
