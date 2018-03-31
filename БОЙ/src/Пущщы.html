@@ -101,9 +101,9 @@ this.time = 0;
 var monster =
 {
 //Размер каждого кадра и число столбцов в наборе фреймов
-IMAGE: "ship.png",
+IMAGE: "ship2.png",
 SIZE: 128,
-COLUMNS: 3,
+COLUMNS: 5,
 //Номер последнего кадра анимации и номер текущего кадра
 numberOfFrames: 5,
 currentFrame: 0,
@@ -156,7 +156,7 @@ case this.JUMPING:
 //forward меняет свое значение на false
 if(this.currentFrame === this.numberOfFrames)
 {
-this.forward = false;
+this.currentFrame=-1;
 }
 //Если это начальный кадр, свойство forward
 //меняет свое значение на true
@@ -334,8 +334,7 @@ output.innerHTML = "Корэблей с пупуасами уничтожено:
 </script>
 </head>
 <body>
-
-	<script>
+<script>
 		var korablik=
 		{
 			//Размер каждого кадра и число столбцов в наборе фреймов
@@ -393,7 +392,7 @@ case this.JUMPING:
 //forward меняет свое значение на false
 if(this.currentFrame === this.numberOfFrames)
 {
-this.forward = false;
+this.currentFrame=-1;
 }
 //Если это начальный кадр, свойство forward
 //меняет свое значение на true
